@@ -5,7 +5,7 @@ int main(){
 	char string[100];
 	int i=0;
 	FILE *file;
-	file=fopen("archivo.txt", "r+");
+	file=fopen("archivo.txt", "r");
 	if (file==NULL){
 		printf("No existe el archivo\n");
 		return 0;

@@ -3,7 +3,6 @@
 #include<ctype.h>
 
 int main(){
-int i=0;
 	int b=0;
 	int c=0;
 	FILE *file;

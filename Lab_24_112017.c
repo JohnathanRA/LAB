@@ -3,6 +3,8 @@
 #include<ctype.h>
 
 int main(){
+int string[100];
+int i=1;
 	int b=0;
 	int c=0;
 	FILE *file;
@@ -16,8 +18,12 @@ int main(){
 	if(isdigit(c)){
 			b++;	
 	}
+	if(c==' '){
+	i++;	
+	}
 }
 	printf("El total de numeros es: %d \n", b);
+	printf("El total de palabras es: %d \n", i);
 	fclose(file);
 	return 0;	
 }

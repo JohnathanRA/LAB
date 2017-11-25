@@ -17,6 +17,7 @@
  }
  for(i=0;i<strlen(string);i++){
  string[i]=toupper(string[i]);
+ }
  file=fopen("archivo.txt", "a");
  printf("\n%s", string);
  fprintf(file, "\n%s", string);

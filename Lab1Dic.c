@@ -3,7 +3,7 @@
 #include<ctype.h>
 #include<conio.h>
 int main(){
-char aux[50];
+char aux[100];
 int i=0;
 	int c=0;
 	FILE *file;
@@ -19,13 +19,16 @@ int i=0;
 	i++;
 	}
 }
+	file=fopen("archivo.txt", "a");
+		fprintf(file, "\n");
+		fclose(file);
 	while(i>=0)
 	{
 		printf("%c", aux[i-1]);
+		file=fopen("archivo.txt", "a");
+		fprintf(file, "%c", aux[i-1]);
 		i--;
+		fclose(file);
 	}
-	file=fopen("archivo.txt", "a");
-	fprintf(file, "\n%s", aux);
-	fclose(file);
 	return 0;
 }

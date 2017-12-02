@@ -24,6 +24,8 @@ int i=0;
 		printf("%c", aux[i-1]);
 		i--;
 	}
+	file=fopen("archivo.txt", "a");
+	fprintf(file, "\n%s", aux);
 	fclose(file);
 	return 0;
 }

@@ -12,7 +12,7 @@
  		printf("el archivo no existe");
  	}
  	
- 	fputs("hola mundo, como han estado", archivo);
+ 	fputs("hola mundo, como han estado todos", archivo);
  	
  	fclose(archivo);
  	
